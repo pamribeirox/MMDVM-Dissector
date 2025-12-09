@@ -62,7 +62,7 @@ function string.fromhex(str)
 end
 
 function round(num, precision)
-   return math.floor(num*math.pow(10,precision)+0.5) / math.pow(10,precision)
+   return math.floor(num * (10 ^ precision)+0.5) / (10 ^ precision)
 end
 
 -- removes leading zeros
